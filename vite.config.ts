@@ -60,18 +60,22 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     // },
     build: {
       target: 'modules',
-      outDir: 'build',
+      outDir: 'dist',
       assetsDir: 'assets',
       cssCodeSplit: true,
       assetsInlineLimit: 4096,
       sourcemap: true,
       minify: 'terser',
       chunkSizeWarningLimit: 500,
-      brotliSize: true,
+      // brotliSize: true,
       emptyOutDir: true,
       manifest: false,
       rollupOptions: {
+        // external: isBuild ? ['antd-mobile'] : [],
         output: {
+          /* globals: {
+            'antd-mobile': 'antd-mobile',
+          }, */
           manualChunks: {
             react: ['react'],
             'antd-mobile': ['antd-mobile'],
@@ -94,5 +98,5 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         BUILD_TIME: new Date().toLocaleString(),
       }),
     },
-  };
+  }
 };
