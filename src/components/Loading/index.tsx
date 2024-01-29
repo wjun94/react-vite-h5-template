@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 import './index.less';
-export interface LoadingViewProps {
+export interface LoadingProps {
   className?: string;
   style?: string;
   height?: number;
@@ -8,7 +8,7 @@ export interface LoadingViewProps {
   isPage?: boolean;
 }
 
-const LoadingView: FC<LoadingViewProps> = ({
+const Loading: FC<LoadingProps> = ({
   className,
   width,
   height,
@@ -28,4 +28,4 @@ const LoadingView: FC<LoadingViewProps> = ({
     </div>
   );
 };
-export default memo(LoadingView);
+export default memo(Loading);

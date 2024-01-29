@@ -7,7 +7,7 @@
  * @LastEditTime: 2022-02-16 22:43:05
  */
 import { memo, useState } from 'react';
-import LoadingView from '../../components/LoadingView';
+import Loading from '../../components/Loading';
 
 const Home = () => {
   const [count, setCount] = useState(1);
@@ -19,7 +19,7 @@ const Home = () => {
         home5434
       </div>
       <div className="bg-green-200 font-$30">{count}</div>
-      <LoadingView />
+      <Loading />
     </div>
   );
 };

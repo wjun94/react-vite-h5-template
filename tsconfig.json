@@ -16,6 +16,18 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
+
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "rootDir": ".",
+
     "paths": {
       "@/*": ["src/*"]
     }

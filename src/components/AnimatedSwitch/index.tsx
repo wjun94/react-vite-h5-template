@@ -7,7 +7,7 @@ const AnimatedSwitch: FC<White.AnimatedSwitchProps> = ({
   children,
   classNames,
   primaryKey,
-  timeout = 300,
+  timeout = 30,
   ...other
 }) => {
   return (

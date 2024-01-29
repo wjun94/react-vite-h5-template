@@ -1,5 +1,5 @@
 import AnimatedSwitch from '@/components/AnimatedSwitch';
-import LoadingView from '@/components/LoadingView';
+import Loading from '@/components/Loading';
 import useTitle from '@/hooks/useTitle';
 import { White } from '@/typings';
 import { treeToList } from '@/utils';
@@ -50,7 +50,7 @@ const RouteRender = () => {
         }
       }}>
       <div className="fullPage">
-        <Suspense fallback={<LoadingView />}>
+        <Suspense fallback={<Loading />}>
           <Routes location={location}>{routesView}</Routes>
         </Suspense>
       </div>
