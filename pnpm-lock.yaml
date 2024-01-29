@@ -14,6 +14,7 @@ specifiers:
   antd-mobile: ^5.0.0-rc.19
   autoprefixer: ^10.4.2
   axios: ^0.21.4
+  clsx: ^2.1.0
   consola: ^2.15.3
   eslint: ^7.32.0
   eslint-config-airbnb: ^18.2.1
@@ -56,6 +57,7 @@ dependencies:
   ahooks: 3.7.8_react@17.0.2
   antd-mobile: 5.28.2_sfoxds7t5ydpegc3knd667wn6m
   axios: 0.21.4
+  clsx: 2.1.0
   history: 5.3.0
   lib-flexible: 0.3.2
   react: 17.0.2
@@ -2608,6 +2610,11 @@ packages:
     dependencies:
       is-regexp: 2.1.0
     dev: true
+
+  /clsx/2.1.0:
+    resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
